@@ -17,7 +17,7 @@ const MobileNavbar = () => {
     <>
       {/* <div className="fixed top-[0px] h-[70px] w-dvw backdrop-blur-[5px] z-[4]"> */}
           <Image
-            className="fixed top-[10px] left-[10px] md:h-[60px] h-[49px] w-[70px] md:w-[80px] z-[7]"
+            className="fixed top-[10px] left-[10px] md:h-[60px] h-[40px] w-[60px] md:w-[80px] z-[7]"
             alt="KCKM"
             src={Logo}
           />
@@ -39,15 +39,15 @@ const MobileNavbar = () => {
             />
           </div>
 
-          <div className="fixed md:hidden flex items-center justify-center h-[40px] w-[50px] top-[15px] hover:scale-[109%] transition-all duration-200 cursor-pointer right-[20px] bg-white rounded-[5px] z-[7]">
+          <div className="fixed md:hidden flex items-center justify-center h-[35px] w-[40px] top-[15px] hover:scale-[109%] transition-all duration-200 cursor-pointer right-[20px] bg-white rounded-[5px] z-[7]">
             <button onClick={() => setIsOpen(!isOpen)}>
               {isOpen ? (
                 <X
                   className="cursor-pointer stroke-black hover:scale-[110%]"
-                  size={32}
+                  size={28}
                 />
               ) : (
-                <Menu className="cursor-pointer stroke-black hover:scale-[110%]" size={32} />
+                <Menu className="cursor-pointer stroke-black hover:scale-[110%]" size={28} />
               )}
             </button>
           </div>

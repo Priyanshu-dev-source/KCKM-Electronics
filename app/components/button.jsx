@@ -1,5 +1,6 @@
 import { useRouter } from 'next/navigation';
-import React from "react";
+import { usePathname } from 'next/navigation';
+import React, { useEffect } from "react";
 
 
 const Button = ({
@@ -22,9 +23,28 @@ const Button = ({
 }) => {
   const router = useRouter();
 
+  const pathname = usePathname();
+
+  // useEffect(() => {
+    
+    const handleRoute = () =>{
+      if (pathname === onClickLink) {
+        // Already on the page, just scroll to top
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      } else {
+        // Navigate to another route
+        router.push(onClickLink);
+      }
+    }
+
+
+  // },[])
+
+  
+
   return (
     <button
-      onClick={()=>router.push(`${onClickLink}`)}
+      onClick={handleRoute}
       className={`group ${height} ${width} ${bgColor} ${zIndex} ${textColor} ${rounded} ${paddingLeft} hover:pl-[0px] ${textSize} ${fontFamily} ${letterSpacing} cursor-pointer ${onHover} transition-all duration-300 flex items-center ${gap} justify-center overflow-hidden`}
     >
       {isSvgOn &&

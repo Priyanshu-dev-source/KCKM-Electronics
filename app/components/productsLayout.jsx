@@ -201,7 +201,7 @@ export default function ProductDisplay({ id, name, description, features, imageU
 
   return (
     <motion.div
-      initial={{ x: -200, opacity: 0 }}
+      initial={{ x: -90, opacity: 0 }}
       whileInView={{ x: 0, opacity: 1 }}
       transition={{ duration: 0.3 }}
       className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-start w-full px-4 md:px-8"
@@ -273,7 +273,7 @@ export default function ProductDisplay({ id, name, description, features, imageU
         </p>
 
         <div>
-          <h3 className="text-[28px] sm:text-[36px] md:text-[48px] font-semibold mb-4">Key Features</h3>
+          <h3 className="text-[28px] sm:text-[36px] md:text-[42px] font-semibold mb-4">Key Features</h3>
           <ul className="relative right-[20px] space-y-3">
             {features.map((feature, index) => (
               <li key={index} className="flex items-start gap-2">
