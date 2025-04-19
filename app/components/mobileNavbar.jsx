@@ -10,6 +10,10 @@ const iceland = Iceland({
   weight: "400",
 });
 
+const exo2 = Exo_2({ subsets: ["latin"], weight: "300" });
+const inter = Inter({ subsets: ["latin"], weight: "500" });
+
+
 const MobileNavbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -60,11 +64,11 @@ const MobileNavbar = () => {
               <Button
                 onClickLink={"/"}
                 height="h-[97%]"
-                width="w-[50%]"
+                width="w-[80%]"
                 bgColor="bg-[rgba(255,255,255,1)]"
                 rounded="rounded-[5px]"
                 textSize="text-[25px]"
-                textColor="text-white"
+                textColor="text-black"
                 buttonValue="Home"
                 fontFamily={iceland.className}
                 letterSpacing="tracking-wide"
@@ -87,7 +91,7 @@ const MobileNavbar = () => {
               <Button
                 onClickLink={"/products"}
                 height="h-[97%]"
-                width="w-[50%]"
+                width="w-[80%]"
                 bgColor="bg-[rgba(255,255,255,1)]"
                 rounded="rounded-[5px]"
                 textSize="text-[25px]"
@@ -114,7 +118,7 @@ const MobileNavbar = () => {
               <Button
                 onClickLink={"/projects"}
                 height="h-[97%]"
-                width="w-[50%]"
+                width="w-[80%]"
                 bgColor="bg-[rgba(255,255,255,1)]"
                 rounded="rounded-[5px]"
                 textSize="text-[25px]"
@@ -141,7 +145,7 @@ const MobileNavbar = () => {
               <Button
                 onClickLink={"/team"}
                 height="h-[97%]"
-                width="w-[50%]"
+                width="w-[80%]"
                 bgColor="bg-[rgba(255,255,255,1)]"
                 rounded="rounded-[5px]"
                 textSize="text-[25px]"
@@ -168,7 +172,7 @@ const MobileNavbar = () => {
               <Button
                 onClickLink={"/contactUs"}
                 height="h-[36px]"
-                width="w-[50%]"
+                width="w-[80%]"
                 bgColor="bg-[rgba(255,255,255,1)]"
                 rounded="rounded-[5px]"
                 textSize="text-[25px]"
@@ -178,7 +182,7 @@ const MobileNavbar = () => {
                 letterSpacing="tracking-wide"
                 onHover="hover:w-[98%] hover:bg-black hover:shadow-[0_0px_5px_rgba(255,255,255,0.6)]"
                 isSvgOn={true}
-                paddingLeft="pl-[85px]"
+                paddingLeft="md:pl-[85px] pl-[105px]"
                 gap="gap-[5px]"
                 svgForm={
                   <svg

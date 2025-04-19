@@ -6,7 +6,6 @@ import Navbar from "../components/navbar";
 import MobileNavbar from "../components/mobileNavbar";
 import ProductLayout from "../components/productsLayout.jsx";
 import Footer from "../components/footer.jsx"
-import Link from "next/link";
 import { motion } from "motion/react";
 
 import { Exo_2, Inter } from "next/font/google";

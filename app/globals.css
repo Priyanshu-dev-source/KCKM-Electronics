@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@import "leaflet/dist/leaflet.css";
 
 @custom-variant dark (&:is(.dark *));
 /* @import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap'); */
