@@ -4,12 +4,6 @@ import React, { useState, useEffect } from "react";
 import Navbar from "../components/navbar";
 import MobileNavbar from "../components/mobileNavbar.jsx";
 import Footer from "../components/footer.jsx";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import L from "leaflet";
-import "leaflet/dist/leaflet.css";
-import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
-import markerIcon from "leaflet/dist/images/marker-icon.png";
-import markerShadow from "leaflet/dist/images/marker-shadow.png";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -17,12 +11,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Phone, MapPin, Clock, Send, Headset } from "lucide-react";
 import { ToastContainer, toast } from "react-toastify";
 import { Exo_2, Iceland, Inter } from "next/font/google";
+import dynamic from "next/dynamic";
 
-delete L.Icon.Default.prototype._getIconUrl;
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl: markerIcon2x,
-  iconUrl: markerIcon,
-  shadowUrl: markerShadow,
+const MapComponent = dynamic(() => import("../components/mapContainer.jsx"), {
+  ssr: false,
 });
 
 const iceland = Iceland({
@@ -190,7 +182,7 @@ const Products = () => {
               </div>
               <div className="space-y-20 flex items-center justify-center flex-col">
                 <div className="h-[600px] w-full rounded-[20px] bg-transparent flex items-center justify-center z-[3]">
-                  <MapContainer
+                  {/* <MapContainer
                     className="rounded-[20px]"
                     center={latLng}
                     zoom={16}
@@ -206,7 +198,8 @@ const Products = () => {
                         Selected Location <br /> ({latLng.lat}, {latLng.lng})
                       </Popup>
                     </Marker>
-                  </MapContainer>
+                  </MapContainer> */}
+                  <MapComponent latLng={latLng} />
                 </div>
 
                 <div className="h-[600px] md:h-[500px] w-full rounded-[20px] flex-col bg-white/10 flex items-start md:px-12 px-7 gap-[20px] justify-center">
