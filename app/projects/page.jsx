@@ -168,7 +168,7 @@ const Projects = () => {
             <h1
               className={`md:text-6xl text-[32px] text-white ${inter.className}`}
             >
-              Focused Marketing
+              Aim to Scale Up
             </h1>
           </motion.div>
           <div className="h-[92%] md:h-[90%] w- md:w-full rounded-[15px] flex items-center justify-evenly flex-col flex-wrap">
