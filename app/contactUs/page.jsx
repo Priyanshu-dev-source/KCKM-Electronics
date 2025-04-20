@@ -296,7 +296,7 @@ const inter = Inter({ subsets: ["latin"], weight: "700" });
 const Products = () => {
   useEffect(() => {
     document.body.style.overflowY = "auto";
-    emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY);
+    // emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY);
   }, []);
 
   const [formData, setFormData] = useState({
@@ -326,7 +326,8 @@ const Products = () => {
           from_email: formData.email,
           subject: formData.subject,
           message: formData.message,
-        }
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY, 
       )
       .then(
         () => {
