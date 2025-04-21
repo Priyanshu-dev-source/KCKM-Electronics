@@ -2,8 +2,21 @@
 @import "tw-animate-css";
 @import "leaflet/dist/leaflet.css";
 
-@custom-variant dark (&:is(.dark *));
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* @custom-variant dark (&:is(.dark *)); */
 /* @import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap'); */
+
+:root {
+    /* Your default theme */
+    --background: white;
+    --foreground: black;
+  }
+  
+  [data-theme='dark'] {
+    --background: black;
+    --foreground: white;
+  }
 
 body{
     /* overflow-x: hidden; */

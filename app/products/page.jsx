@@ -20,7 +20,7 @@ const Products = () => {
 
   return (
     <>
-      <div className="relative w-full bg-black text-white overflow-x-hidden">
+      <div className="relative w-full bg-white dark:bg-black text-black dark:text-white overflow-x-hidden">
         <div className="fixed top-[0px] h-[60px] w-dvw backdrop-blur-[5px] z-[4]">
           <MobileNavbar />
         </div>
@@ -47,7 +47,7 @@ const Products = () => {
             <h1 className="text-[45px] md:text-6xl font-bold">Our Products</h1>
           </motion.div>
 
-          <div className="min-h-screen bg-black text-white">
+          <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white">
             <div className="container relative md:bottom-[50px] mx-auto px-2 py-2">
               <div className="space-y-24">
                 <ProductLayout
@@ -97,7 +97,7 @@ const Products = () => {
             >
               <Focus className="md:h-[70px] md:w-[70px] h-[42px] w-[42px]" />
               <h1
-                className={`md:text-6xl text-[32px] text-white ${inter.className}`}
+                className={`md:text-6xl text-[32px] text-black dark:text-white ${inter.className}`}
               >
                 Focused Marketing
               </h1>
@@ -108,7 +108,7 @@ const Products = () => {
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.3 }}
                 exit={{ x: -100, opacity: 0 }}
-                className={`h-[60px] md:h-[80px] w-[90%] rounded-[15px] bg-white/10 text-white text-[20px] md:text-2xl hover:shadow-[0_0_20px_rgba(255,255,255,0.5)] hover:scale-[104%] transition-all duration-150 cursor-pointer ${exo2.className} flex items-center gap-4 px-6`}
+                className={`h-[60px] md:h-[80px] w-[90%] rounded-[15px] bg-zinc-300 dark:bg-white/10 text-black dark:text-white text-[20px] md:text-2xl hover:shadow-[0_0_20px_rgba(0,0,0,1)] dark:hover:shadow-[0_0_20px_rgba(255,255,255,0.5)] hover:scale-[104%] transition-all duration-150 cursor-pointer ${exo2.className} flex items-center gap-4 px-6`}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -116,9 +116,9 @@ const Products = () => {
                   viewBox="0 -960 960 960"
                   width="30px"
                   fill="none"
-                  stroke="#e3e3e3"
+                  // stroke="#e3e3e3"
                   strokeWidth="40"
-                  className="flex-shrink-0"
+                  className="dark:stroke-white stroke-black flex-shrink-0"
                 >
                   <path d="M306.84-700.82 424-853q11-14 25.59-21 14.58-7 30.5-7 15.91 0 30.41 7t25.5 21l117.16 152.18L831-641q23 8 36 27.11t13 42.22q0 10.67-3.03 21.3-3.04 10.63-9.97 20.37L753-367l4 173q0 31-21 52.5T685.82-120q-1.82 0-18.82-3l-187-52-186.78 51.92Q288-121 282.49-120.5q-5.51.5-10.1.5-29.39 0-49.89-21.69Q202-163.37 203-195l4-173.25L93-531q-6.93-9.83-9.97-20.55Q80-562.28 80-573q0-23 12.92-41.61Q105.84-633.21 129-641l177.84-59.82ZM343-649l-209 70 134 194-5 207 217-60 217 61-5-208 134-192-209-72-137-178-137 178Zm137 147Z" />
                 </svg>
@@ -130,7 +130,7 @@ const Products = () => {
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.3 }}
                 exit={{ x: -200, opacity: 0 }}
-                className={`h-[80px] md:h-[80px] w-[90%] rounded-[15px] bg-white/10 text-white text-[20px] md:text-2xl hover:shadow-[0_0_20px_rgba(255,255,255,0.5)] hover:scale-[104%] transition-all duration-150 cursor-pointer ${exo2.className} flex items-center gap-4 px-6`}
+                className={`h-[80px] md:h-[80px] w-[90%] rounded-[15px] bg-zinc-300 dark:bg-white/10 text-black dark:text-white text-[20px] md:text-2xl hover:shadow-[0_0_20px_rgba(0,0,0,1)] dark:hover:shadow-[0_0_20px_rgba(255,255,255,0.5)] hover:scale-[104%] transition-all duration-150 cursor-pointer ${exo2.className} flex items-center gap-4 px-6`}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -138,9 +138,9 @@ const Products = () => {
                   viewBox="0 -960 960 960"
                   width="30px"
                   fill="none"
-                  stroke="#e3e3e3"
+                  // stroke="#e3e3e3"
                   strokeWidth="40"
-                  className="flex-shrink-0"
+                  className="dark:stroke-white stroke-black flex-shrink-0"
                 >
                   <path d="M306.84-700.82 424-853q11-14 25.59-21 14.58-7 30.5-7 15.91 0 30.41 7t25.5 21l117.16 152.18L831-641q23 8 36 27.11t13 42.22q0 10.67-3.03 21.3-3.04 10.63-9.97 20.37L753-367l4 173q0 31-21 52.5T685.82-120q-1.82 0-18.82-3l-187-52-186.78 51.92Q288-121 282.49-120.5q-5.51.5-10.1.5-29.39 0-49.89-21.69Q202-163.37 203-195l4-173.25L93-531q-6.93-9.83-9.97-20.55Q80-562.28 80-573q0-23 12.92-41.61Q105.84-633.21 129-641l177.84-59.82ZM343-649l-209 70 134 194-5 207 217-60 217 61-5-208 134-192-209-72-137-178-137 178Zm137 147Z" />
                 </svg>
@@ -152,7 +152,7 @@ const Products = () => {
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.3 }}
                 exit={{ x: -200, opacity: 0 }}
-                className={`h-[100px] md:h-[80px] w-[90%] rounded-[15px] bg-white/10 text-white text-[20px] md:text-2xl hover:shadow-[0_0_20px_rgba(255,255,255,0.5)] hover:scale-[104%] transition-all duration-150 cursor-pointer ${exo2.className} flex items-center gap-4 px-6`}
+                className={`h-[100px] md:h-[80px] w-[90%] rounded-[15px] bg-zinc-300 dark:bg-white/10 text-black dark:text-white text-[20px] md:text-2xl hover:shadow-[0_0_20px_rgba(0,0,0,1)] dark:hover:shadow-[0_0_20px_rgba(255,255,255,0.5)] hover:scale-[104%] transition-all duration-150 cursor-pointer ${exo2.className} flex items-center gap-4 px-6`}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -160,9 +160,9 @@ const Products = () => {
                   viewBox="0 -960 960 960"
                   width="30px"
                   fill="none"
-                  stroke="#e3e3e3"
+                  // stroke="#e3e3e3"
                   strokeWidth="40"
-                  className="flex-shrink-0"
+                  className="dark:stroke-white stroke-black flex-shrink-0"
                 >
                   <path d="M306.84-700.82 424-853q11-14 25.59-21 14.58-7 30.5-7 15.91 0 30.41 7t25.5 21l117.16 152.18L831-641q23 8 36 27.11t13 42.22q0 10.67-3.03 21.3-3.04 10.63-9.97 20.37L753-367l4 173q0 31-21 52.5T685.82-120q-1.82 0-18.82-3l-187-52-186.78 51.92Q288-121 282.49-120.5q-5.51.5-10.1.5-29.39 0-49.89-21.69Q202-163.37 203-195l4-173.25L93-531q-6.93-9.83-9.97-20.55Q80-562.28 80-573q0-23 12.92-41.61Q105.84-633.21 129-641l177.84-59.82ZM343-649l-209 70 134 194-5 207 217-60 217 61-5-208 134-192-209-72-137-178-137 178Zm137 147Z" />
                 </svg>
@@ -174,7 +174,7 @@ const Products = () => {
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.3 }}
                 exit={{ x: -200, opacity: 0 }}
-                className={`h-[110px] md:h-[80px] w-[90%] rounded-[15px] bg-white/10 text-white text-[20px] md:text-2xl hover:shadow-[0_0_20px_rgba(255,255,255,0.5)] hover:scale-[104%] transition-all duration-150 cursor-pointer ${exo2.className} flex items-center gap-4 px-6`}
+                className={`h-[110px] md:h-[80px] w-[90%] rounded-[15px] bg-zinc-300 dark:bg-white/10 text-black dark:text-white text-[20px] md:text-2xl hover:shadow-[0_0_20px_rgba(0,0,0,1)] dark:hover:shadow-[0_0_20px_rgba(255,255,255,0.5)] hover:scale-[104%] transition-all duration-150 cursor-pointer ${exo2.className} flex items-center gap-4 px-6`}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -182,9 +182,9 @@ const Products = () => {
                   viewBox="0 -960 960 960"
                   width="30px"
                   fill="none"
-                  stroke="#e3e3e3"
+                  // stroke="#e3e3e3"
                   strokeWidth="40"
-                  className="flex-shrink-0"
+                  className="dark:stroke-white stroke-black flex-shrink-0"
                 >
                   <path d="M306.84-700.82 424-853q11-14 25.59-21 14.58-7 30.5-7 15.91 0 30.41 7t25.5 21l117.16 152.18L831-641q23 8 36 27.11t13 42.22q0 10.67-3.03 21.3-3.04 10.63-9.97 20.37L753-367l4 173q0 31-21 52.5T685.82-120q-1.82 0-18.82-3l-187-52-186.78 51.92Q288-121 282.49-120.5q-5.51.5-10.1.5-29.39 0-49.89-21.69Q202-163.37 203-195l4-173.25L93-531q-6.93-9.83-9.97-20.55Q80-562.28 80-573q0-23 12.92-41.61Q105.84-633.21 129-641l177.84-59.82ZM343-649l-209 70 134 194-5 207 217-60 217 61-5-208 134-192-209-72-137-178-137 178Zm137 147Z" />
                 </svg>
@@ -196,7 +196,7 @@ const Products = () => {
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.3 }}
                 exit={{ x: -200, opacity: 0 }}
-                className={`md:h-[80px] h-[105px] w-[90%] rounded-[15px] bg-white/10 text-white text-[20px] md:text-2xl hover:shadow-[0_0_20px_rgba(255,255,255,0.5)] hover:scale-[104%] transition-all duration-150 cursor-pointer ${exo2.className} flex items-center gap-4 px-6`}
+                className={`md:h-[80px] h-[105px] w-[90%] rounded-[15px] bg-zinc-300 dark:bg-white/10 text-black dark:text-white text-[20px] md:text-2xl hover:shadow-[0_0_20px_rgba(0,0,0,1)] dark:hover:shadow-[0_0_20px_rgba(255,255,255,0.5)] hover:scale-[104%] transition-all duration-150 cursor-pointer ${exo2.className} flex items-center gap-4 px-6`}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -204,9 +204,9 @@ const Products = () => {
                   viewBox="0 -960 960 960"
                   width="30px"
                   fill="none"
-                  stroke="#e3e3e3"
+                  // stroke="#e3e3e3"
                   strokeWidth="40"
-                  className="flex-shrink-0"
+                  className="dark:stroke-white stroke-black flex-shrink-0"
                 >
                   <path d="M306.84-700.82 424-853q11-14 25.59-21 14.58-7 30.5-7 15.91 0 30.41 7t25.5 21l117.16 152.18L831-641q23 8 36 27.11t13 42.22q0 10.67-3.03 21.3-3.04 10.63-9.97 20.37L753-367l4 173q0 31-21 52.5T685.82-120q-1.82 0-18.82-3l-187-52-186.78 51.92Q288-121 282.49-120.5q-5.51.5-10.1.5-29.39 0-49.89-21.69Q202-163.37 203-195l4-173.25L93-531q-6.93-9.83-9.97-20.55Q80-562.28 80-573q0-23 12.92-41.61Q105.84-633.21 129-641l177.84-59.82ZM343-649l-209 70 134 194-5 207 217-60 217 61-5-208 134-192-209-72-137-178-137 178Zm137 147Z" />
                 </svg>
@@ -229,7 +229,7 @@ const Products = () => {
             >
               <Store className="md:h-[60px] h-[40px] md:w-[60px] w-[40px]" />
               <h1
-                className={`md:text-6xl text-[38px] text-white ${inter.className}`}
+                className={`md:text-6xl text-[38px] text-black dark:text-white ${inter.className}`}
               >
                 Target Market
               </h1>
@@ -241,11 +241,11 @@ const Products = () => {
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.3 }}
                 exit={{ x: 200, opacity: 0 }}
-                className="h-[250px] md:h-[67%] w-[96%] md:w-[17%] bg-white/10 cursor-pointer hover:scale-[106%] hover:shadow-[0_0_40px_rgba(255,255,255,0.6)] transition-all duration-200 rounded-[20px] flex items-center justify-start px-[30px] py-[20px] gap-[15px] flex-col"
+                className="h-[250px] md:h-[67%] w-[96%] md:w-[17%] bg-zinc-300 dark:bg-white/10 cursor-pointer hover:scale-[106%] dark:hover:shadow-[0_0_40px_rgba(255,255,255,0.6)] hover:shadow-[0_0_40px_rgba(0,0,0,1)] transition-all duration-200 rounded-[20px] flex items-center justify-start px-[30px] py-[20px] gap-[15px] flex-col"
               >
                 <Cpu className="relative top-[10px] h-[60px] w-[60px]" />
                 <p
-                  className={`w-[90%] h-[40px] text-[28px] pt-[27px] text-center text-white ${exo2.className}`}
+                  className={`w-[90%] h-[40px] text-[28px] pt-[27px] text-center text-black dark:text-white ${exo2.className}`}
                 >
                   Tech Startups & Innovators.
                 </p>
@@ -255,11 +255,11 @@ const Products = () => {
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.3 }}
                 exit={{ x: 200, opacity: 0 }}
-                className="h-[250px] md:h-[67%] w-[96%] md:w-[17%] bg-white/10 cursor-pointer hover:scale-[106%] hover:shadow-[0_0_40px_rgba(255,255,255,0.6)] transition-all duration-200 rounded-[20px] flex items-center justify-start px-[30px] py-[20px] gap-[15px] flex-col"
+                className="h-[250px] md:h-[67%] w-[96%] md:w-[17%] bg-zinc-300 dark:bg-white/10 cursor-pointer hover:scale-[106%] dark:hover:shadow-[0_0_40px_rgba(255,255,255,0.6)] hover:shadow-[0_0_40px_rgba(0,0,0,1)] transition-all duration-200 rounded-[20px] flex items-center justify-start px-[30px] py-[20px] gap-[15px] flex-col"
               >
                 <CircuitBoard className="relative top-[10px] h-[60px] w-[60px]" />
                 <p
-                  className={`w-[90%] h-[40px] text-[28px] pt-[27px] text-center text-white ${exo2.className}`}
+                  className={`w-[90%] h-[40px] text-[28px] pt-[27px] text-center text-black dark:text-white ${exo2.className}`}
                 >
                   Consumer Electronics Brands.
                 </p>
@@ -269,11 +269,11 @@ const Products = () => {
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.3 }}
                 exit={{ x: 200, opacity: 0 }}
-                className="h-[250px] md:h-[67%] w-[96%] md:w-[17%] bg-white/10 cursor-pointer hover:scale-[106%] hover:shadow-[0_0_40px_rgba(255,255,255,0.6)] transition-all duration-200 rounded-[20px] flex items-center justify-start px-[30px] py-[20px] gap-[15px] flex-col"
+                className="h-[250px] md:h-[67%] w-[96%] md:w-[17%] bg-zinc-300 dark:bg-white/10 cursor-pointer hover:scale-[106%] dark:hover:shadow-[0_0_40px_rgba(255,255,255,0.6)] hover:shadow-[0_0_40px_rgba(0,0,0,1)] transition-all duration-200 rounded-[20px] flex items-center justify-start px-[30px] py-[20px] gap-[15px] flex-col"
               >
                 <HeartPulse className="relative top-[10px] h-[60px] w-[60px]" />
                 <p
-                  className={`w-[90%] h-[40px] text-[28px] pt-[15px] text-center text-white ${exo2.className}`}
+                  className={`w-[90%] h-[40px] text-[28px] pt-[15px] text-center text-black dark:text-white ${exo2.className}`}
                 >
                   Healthcare & MedTech Companies.
                 </p>
@@ -283,11 +283,11 @@ const Products = () => {
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.3 }}
                 exit={{ x: 200, opacity: 0 }}
-                className="h-[250px] md:h-[67%] w-[96%] md:w-[17%] bg-white/10 cursor-pointer hover:scale-[106%] hover:shadow-[0_0_40px_rgba(255,255,255,0.6)] transition-all duration-200 rounded-[20px] flex items-center justify-start px-[30px] py-[20px] gap-[15px] flex-col"
+                className="h-[250px] md:h-[67%] w-[96%] md:w-[17%] bg-zinc-300 dark:bg-white/10 cursor-pointer hover:scale-[106%] dark:hover:shadow-[0_0_40px_rgba(255,255,255,0.6)] hover:shadow-[0_0_40px_rgba(0,0,0,1)] transition-all duration-200 rounded-[20px] flex items-center justify-start px-[30px] py-[20px] gap-[15px] flex-col"
               >
                 <Workflow className="relative top-[10px] h-[60px] w-[60px]" />
                 <p
-                  className={`w-[90%] h-[40px] text-[28px] pt-[12px] text-center text-white ${exo2.className}`}
+                  className={`w-[90%] h-[40px] text-[28px] pt-[12px] text-center text-black dark:text-white ${exo2.className}`}
                 >
                   Industrial Automation & Smart Systems.
                 </p>
@@ -297,18 +297,18 @@ const Products = () => {
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.3 }}
                 exit={{ x: 200, opacity: 0 }}
-                className="h-[250px] md:h-[67%] w-[96%] md:w-[17%] bg-white/10 cursor-pointer hover:scale-[106%] hover:shadow-[0_0_40px_rgba(255,255,255,0.6)] transition-all duration-200 rounded-[20px] flex items-center justify-start px-[30px] py-[20px] gap-[15px] flex-col"
+                className="h-[250px] md:h-[67%] w-[96%] md:w-[17%] bg-zinc-300 dark:bg-white/10 cursor-pointer hover:scale-[106%] dark:hover:shadow-[0_0_40px_rgba(255,255,255,0.6)] hover:shadow-[0_0_40px_rgba(0,0,0,1)] transition-all duration-200 rounded-[20px] flex items-center justify-start px-[30px] py-[20px] gap-[15px] flex-col"
               >
                 <BookMarked className="relative top-[10px] h-[60px] w-[60px]" />
                 <p
-                  className={`w-[90%] h-[40px] text-[28px] pt-[12px] text-center text-white ${exo2.className}`}
+                  className={`w-[90%] h-[40px] text-[28px] pt-[12px] text-center text-black dark:text-white ${exo2.className}`}
                 >
                   Educational & Research Institutions
                 </p>
               </motion.div>
             </div>
           </div>
-          <div className="relative md:top-[30px] top-[1050px] h-[400px] md:h-[250px] w-full border-t-2 border-white/20 flex items-center pt-[0px] justify-start flex-col">
+          <div className="relative md:top-[30px] top-[1050px] h-[400px] md:h-[250px] w-full border-t-2 border-black dark:border-white/20 flex items-center pt-[0px] justify-start flex-col">
             <Footer/>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import { ThemeProvider } from "next-themes";
 import "./globals.css";
 
 // const geistSans = Geist({
@@ -19,9 +20,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-      >
-        {children}
+      <body className="transition-colors duration-500">
+        <ThemeProvider attribute="class">{children}</ThemeProvider>
       </body>
     </html>
   );

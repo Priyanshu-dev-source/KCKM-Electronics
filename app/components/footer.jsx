@@ -4,13 +4,13 @@ import { motion } from "motion/react";
 import Link from "next/link";
 import { Exo_2, Inter } from "next/font/google";
 
-const exo2 = Exo_2({ subsets: ["latin"], weight: "300" });
-const inter = Inter({ subsets: ["latin"], weight: "700" });
+const exo2 = Exo_2({ subsets: ["latin"], weight: "300", display: "swap",  display: "swap" });
+const inter = Inter({ subsets: ["latin"], weight: "700",  display: "swap", display: "swap" });
 
 const Footer = () => {
   return (
     <>
-      <div className="relative bottom-[40px] h-[80px] w-[290px] md:w-164 bg-black flex items-center justify-evenly">
+      <div className="relative bottom-[40px] h-[80px] w-[290px] md:w-164 bg-white dark:bg-black flex items-center justify-evenly">
         <Link
           href="https://www.linkedin.com/in/priyanshu-kumar-04ba7a300/"
           target="_blank"
@@ -22,13 +22,13 @@ const Footer = () => {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.4 }}
             exit={{ y: 50, opacity: 0 }}
-            className="hover:stroke-blue-500 hover:scale-[115%] transition duration-200 md:h-[32px] h-[26px] md:w-[32px] w-[26px]"
+            className="dark:stroke-white stroke-black hover:stroke-blue-500 hover:scale-[115%] transition duration-200 md:h-[32px] h-[26px] md:w-[32px] w-[26px]"
             xmlns="http://www.w3.org/2000/svg"
             // width="32"
             // height="32"
             viewBox="0 0 24 24"
             fill="none"
-            stroke="white"
+            // stroke="white"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -48,13 +48,13 @@ const Footer = () => {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.4 }}
             exit={{ y: 50, opacity: 0 }}
-            className="hover:stroke-purple-500 hover:scale-[115%] transition duration-200 md:h-[32px] h-[26px] md:w-[32px] w-[26px]"
+            className="dark:stroke-white stroke-black hover:stroke-purple-500 hover:scale-[115%] transition duration-200 md:h-[32px] h-[26px] md:w-[32px] w-[26px]"
             xmlns="http://www.w3.org/2000/svg"
             // width="32"
             // height="32"
             viewBox="0 0 24 24"
             fill="none"
-            stroke="white"
+            // stroke="white"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -75,13 +75,13 @@ const Footer = () => {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.4 }}
             exit={{ y: 50, opacity: 0 }}
-            className="hover:stroke-blue-300 hover:scale-[115%] transition duration-200 md:h-[32px] h-[26px] md:w-[32px] w-[26px]"
+            className="dark:stroke-white stroke-black hover:stroke-blue-300 hover:scale-[115%] transition duration-200 md:h-[32px] h-[26px] md:w-[32px] w-[26px]"
             xmlns="http://www.w3.org/2000/svg"
             // width="32"
             // height="32"
             viewBox="0 0 24 24"
             fill="none"
-            stroke="white"
+            // stroke="white"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -101,13 +101,13 @@ const Footer = () => {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.4 }}
             exit={{ y: 50, opacity: 0 }}
-            className="hover:stroke-blue-400 hover:scale-[115%] transition duration-200 md:h-[32px] h-[26px] md:w-[32px] w-[26px]"
+            className="dark:stroke-white stroke-black hover:stroke-blue-400 hover:scale-[115%] transition duration-200 md:h-[32px] h-[26px] md:w-[32px] w-[26px]"
             xmlns="http://www.w3.org/2000/svg"
             // width="32"
             // height="32"
             viewBox="0 0 24 24"
             fill="none"
-            stroke="white"
+            // stroke="white"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -127,13 +127,13 @@ const Footer = () => {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.4 }}
             exit={{ y: 50, opacity: 0 }}
-            className="hover:stroke-red-500 hover:scale-[115%] transition duration-200 md:h-[32px] h-[26px] md:w-[32px] w-[26px]"
+            className="dark:stroke-white stroke-black hover:stroke-red-500 hover:scale-[115%] transition duration-200 md:h-[32px] h-[26px] md:w-[32px] w-[26px]"
             xmlns="http://www.w3.org/2000/svg"
             // width="32"
             // height="32"
             viewBox="0 0 24 24"
             fill="none"
-            stroke="white"
+            // stroke="white"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -150,13 +150,13 @@ const Footer = () => {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.4 }}
             exit={{ y: 50, opacity: 0 }}
-            className="hover:stroke-green-500 hover:scale-[115%] transition duration-200 md:h-[32px] h-[26px] md:w-[32px] w-[26px]"
+            className="dark:stroke-white stroke-black hover:stroke-green-500 hover:scale-[115%] transition duration-200 md:h-[32px] h-[26px] md:w-[32px] w-[26px]"
             xmlns="http://www.w3.org/2000/svg"
             // width="32"
             // height="32"
             viewBox="0 0 24 24"
             fill="none"
-            stroke="white"
+            // stroke="white"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -170,7 +170,7 @@ const Footer = () => {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.4 }}
         exit={{ y: 50, opacity: 0 }}
-        className={`relative bottom-[40px] md:bottom-[40px] h-[100px] w-[500px] text-[33px] md:text-[40px] text-white tracking-wide flex items-center justify-center ${inter.className}`}
+        className={`relative bottom-[40px] md:bottom-[40px] h-[100px] w-[500px] text-[33px] md:text-[40px] text-black dark:text-white tracking-wide flex items-center justify-center ${inter.className}`}
       >
         KCKM Electronics
       </motion.div>
@@ -179,7 +179,7 @@ const Footer = () => {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.4 }}
         exit={{ y: 50, opacity: 0 }}
-        className={`relative bottom-[50px] md:bottom-[50px] h-[50px] w-[500px] text-[13px] md:text-[15px]  text-white/80 tracking-wide flex items-start justify-center ${exo2.className}`}
+        className={`relative bottom-[50px] md:bottom-[50px] h-[50px] w-[500px] text-[13px] md:text-[15px] text-zinc-800 dark:text-white/80 tracking-wide flex items-start justify-center ${exo2.className}`}
       >
         {" "}
         Copyright &nbsp;&copy;&nbsp;2025 KCKM Electronics, Inc.
@@ -189,42 +189,42 @@ const Footer = () => {
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.4 }}
         exit={{ y: -250, opacity: 0 }}
-        className={`relative bottom-[60px] md:bottom-[40px] h-[200px] md:h-[40px] w-[550px] md:flex-row flex-col flex items-center justify-evenly ${exo2.className} text-white/60 text-[17px]`}
+        className={`relative bottom-[60px] md:bottom-[40px] h-[200px] md:h-[40px] w-[550px] md:flex-row flex-col flex items-center justify-evenly ${exo2.className} text-black    dark:text-white/60 text-[17px]`}
       >
         <Link
-          className="group hover:text-white tracking-wider transition-all duration-200 flex items-center justify-center gap-[1px] flex-col"
+          className="group dark:hover:text-white  tracking-wider transition-all duration-200 flex items-center justify-center gap-[1px] flex-col"
           href="/"
         >
           Home
-          <span className="w-0 h-0.5 bg-white transition-all duration-200 group-hover:w-full"></span>
+          <span className="w-0 h-0.5 bg-black dark:bg-white transition-all duration-200 group-hover:w-full"></span>
         </Link>
         <Link
-          className="group hover:text-white tracking-wider transition-all duration-200 flex items-center justify-center gap-[1px] flex-col"
+          className="group dark:hover:text-white  tracking-wider transition-all duration-200 flex items-center justify-center gap-[1px] flex-col"
           href="/products"
         >
           Products
-          <span className="w-0 h-0.5 bg-white transition-all duration-200 group-hover:w-full"></span>
+          <span className="w-0 h-0.5 bg-black dark:bg-white transition-all duration-200 group-hover:w-full"></span>
         </Link>
         <Link
-          className="group hover:text-white tracking-wider transition-all duration-200 flex items-center justify-center gap-[1px] flex-col"
+          className="group dark:hover:text-white  tracking-wider transition-all duration-200 flex items-center justify-center gap-[1px] flex-col"
           href="/projects"
         >
           Projects
-          <span className="w-0 h-0.5 bg-white transition-all duration-200 group-hover:w-full"></span>
+          <span className="w-0 h-0.5 bg-black dark:bg-white transition-all duration-200 group-hover:w-full"></span>
         </Link>
         <Link
-          className="group hover:text-white tracking-wider transition-all duration-200 flex items-center justify-center gap-[1px] flex-col"
+          className="group dark:hover:text-white  tracking-wider transition-all duration-200 flex items-center justify-center gap-[1px] flex-col"
           href="/team"
         >
           Team
-          <span className="w-0 h-0.5 bg-white transition-all duration-200 group-hover:w-full"></span>
+          <span className="w-0 h-0.5 bg-black dark:bg-white transition-all duration-200 group-hover:w-full"></span>
         </Link>
         <Link
-          className="group hover:text-white tracking-wider transition-all duration-200 flex items-center justify-center gap-[1px] flex-col"
+          className="group dark:hover:text-white  tracking-wider transition-all duration-200 flex items-center justify-center gap-[1px] flex-col"
           href="/contactUs"
         >
           Contact Us
-          <span className="w-0 h-0.5 bg-white transition-all duration-200 group-hover:w-full"></span>
+          <span className="w-0 h-0.5 bg-black dark:bg-white transition-all duration-200 group-hover:w-full"></span>
         </Link>
       </motion.div>
     </>

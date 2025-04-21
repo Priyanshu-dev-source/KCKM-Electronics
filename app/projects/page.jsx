@@ -18,8 +18,8 @@ import ProductLayout from "../components/productsLayout.jsx";
 import Footer from "../components/footer.jsx"
 import { Exo_2, Inter } from "next/font/google";
 
-const exo2 = Exo_2({ subsets: ["latin"], weight: "300" });
-const inter = Inter({ subsets: ["latin"], weight: "700" });
+const exo2 = Exo_2({ subsets: ["latin"], weight: "300", display: "swap" });
+const inter = Inter({ subsets: ["latin"], weight: "700", display: "swap" });
 
 const iconMap = {
   Cpu,
@@ -64,7 +64,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="relative min-h-screen w-full bg-black text-white overflow-x-hidden">
+    <div className="relative min-h-screen w-full bg-white/10 dark:bg-black text-black dark:text-white overflow-x-hidden">
       <div className="fixed top-0 w-full h-[60px] backdrop-blur-md z-[4]">
         <MobileNavbar />
       </div>
@@ -93,13 +93,13 @@ const Projects = () => {
               initial={{ opacity: 0, x: 100 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.4 }}
-              className="bg-white/10 rounded-2xl h-[300px] md:w-full w-[91%] p-4 pt-[40px] flex flex-col items-center text-center gap-[30px] cursor-pointer hover:scale-105 hover:shadow-[0_0_40px_rgba(255,255,255,0.6)] transition-all duration-200"
+              className="bg-zinc-300 dark:bg-white/10 rounded-2xl h-[300px] md:w-full w-[91%] p-4 pt-[40px] flex flex-col items-center text-center gap-[30px] cursor-pointer hover:scale-105 hover:shadow-[0_0_50px_rgba(0,0,0,1)] dark:hover:shadow-[0_0_40px_rgba(255,255,255,0.6)] transition-all duration-200"
             >
               {points.svgs.map((iconName, i) => {
                 const Icon = iconMap[iconName] || HandPlatter;
-                return <Icon key={i} className="w-16 h-16 text-white mb-4" />;
+                return <Icon key={i} className="w-16 h-16 text-black dark:text-white mb-4" />;
               })}
-              <p className={`text-3xl md:text-2xl ${exo2.className}`}>
+              <p className={`text-3xl text-black dark:text-white md:text-2xl ${exo2.className}`}>
                 {points.descp}
               </p>
             </motion.div>
@@ -114,10 +114,10 @@ const Projects = () => {
           className={`relative top-[110px] md:top-[120px] h-[150px] z-[3] w-full flex items-center justify-center md:gap-[25px] gap-[3px] ${inter.className} `}
         >
           <FolderOpenDot className="md:h-[62px] md:w-[62px] h-[48px] w-[48px]" />
-          <h1 className="text-[45px] md:text-6xl font-bold">Our Projects</h1>
+          <h1 className="text-[45px] md:text-6xl dark:text-white text-black font-bold">Our Projects</h1>
         </motion.div>
 
-        <div className={`min-h-screen bg-black text-white ${inter.className}`}>
+        <div className={`min-h-screen bg-white dark:bg-black text-black dark:text-white ${inter.className}`}>
           <div className="container relative bottom-[0px] md:bottom-[-20px] mx-auto py-28">
             <div className="space-y-24">
               <ProductLayout
@@ -166,7 +166,7 @@ const Projects = () => {
           >
             <Globe className="md:h-[70px] md:w-[70px] h-[42px] w-[42px]" />
             <h1
-              className={`md:text-6xl text-[32px] text-white ${inter.className}`}
+              className={`md:text-6xl text-[32px] text-black dark:text-white ${inter.className}`}
             >
               Aim to Scale Up
             </h1>
@@ -179,7 +179,7 @@ const Projects = () => {
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.3 }}
                 exit={{ x: -100, opacity: 0 }}
-                className={`h-[110px] md:h-[80px] w-[90%] md:w-[80%] rounded-[15px] bg-white/10 text-white text-[20px] md:text-2xl hover:shadow-[0_0_20px_rgba(255,255,255,0.5)] hover:scale-[104%] transition-all duration-150 cursor-pointer ${exo2.className} flex items-center gap-4 px-6`}
+                className={`h-[110px] md:h-[80px] w-[90%] md:w-[80%] rounded-[15px] bg-zinc-300 dark:bg-white/10 text-black dark:text-white text-[20px] md:text-2xl hover:shadow-[0_0_20px_rgba(0,0,0,1)] dark:hover:shadow-[0_0_20px_rgba(255,255,255,0.5)] hover:scale-[104%] transition-all duration-150 cursor-pointer ${exo2.className} flex items-center gap-4 px-6`}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -187,9 +187,9 @@ const Projects = () => {
                   viewBox="0 -960 960 960"
                   width="30px"
                   fill="none"
-                  stroke="#e3e3e3"
+                  // stroke="#e3e3e3"
                   strokeWidth="40"
-                  className="flex-shrink-0"
+                  className="flex-shrink-0 dark:stroke-white stroke-black"
                 >
                   <path d="M306.84-700.82 424-853q11-14 25.59-21 14.58-7 30.5-7 15.91 0 30.41 7t25.5 21l117.16 152.18L831-641q23 8 36 27.11t13 42.22q0 10.67-3.03 21.3-3.04 10.63-9.97 20.37L753-367l4 173q0 31-21 52.5T685.82-120q-1.82 0-18.82-3l-187-52-186.78 51.92Q288-121 282.49-120.5q-5.51.5-10.1.5-29.39 0-49.89-21.69Q202-163.37 203-195l4-173.25L93-531q-6.93-9.83-9.97-20.55Q80-562.28 80-573q0-23 12.92-41.61Q105.84-633.21 129-641l177.84-59.82ZM343-649l-209 70 134 194-5 207 217-60 217 61-5-208 134-192-209-72-137-178-137 178Zm137 147Z" />
                 </svg>
@@ -198,7 +198,7 @@ const Projects = () => {
             ))}
           </div>
         </div>
-        <div className="relative md:top-[120px] top-[50px] h-[450px] md:h-[350px] w-full border-t-2 border-white/20 flex items-center pt-[0px] justify-start flex-col">
+        <div className="relative md:top-[120px] top-[50px] h-[450px] md:h-[350px] w-full border-t-2 border-black dark:border-white/20 flex items-center pt-[0px] justify-start flex-col">
           <Footer />
         </div>
       {/* </div> */}

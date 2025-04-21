@@ -267,19 +267,19 @@ export default function ProductDisplay({ id, name, description, features, imageU
         <h2 className="text-[45px] sm:text-[48px] md:text-[60px] font-bold leading-tight">{name}</h2>
 
         <p
-          className={`text-white/60 text-[16px] sm:text-[18px] max-w-full sm:max-w-[550px] ${inter.className} leading-relaxed`}
+          className={`text-zinc-600 dark:text-white/60 text-[16px] sm:text-[18px] max-w-full sm:max-w-[550px] ${inter.className} leading-relaxed`}
         >
           {description}
         </p>
 
         <div>
           <h3 className="text-[28px] sm:text-[36px] md:text-[42px] font-semibold mb-4">Key Features</h3>
-          <ul className="relative right-[20px] space-y-3">
+          <ul className="relative space-y-3">
             {features.map((feature, index) => (
               <li key={index} className="flex items-start gap-2">
-                <span className="inline-block w-2 h-2 mt-2 bg-black rounded-full"></span>
-                <span className="text-[16px] sm:text-[18px] text-white/60 flex items-center">
-                  <ChevronRight className="h-5 w-5 mr-1" />
+                {/* <span className="inline-block w-2 h-2 mt-2 bg-black rounded-full"></span> */}
+                <span className="text-[16px] sm:text-[18px] text-zinc-600 dark:text-white/60 flex items-center">
+                  <ChevronRight className="h-5 w-5 mr-1 dark:stroke-white stroke-black" />
                   {feature}
                 </span>
               </li>

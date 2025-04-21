@@ -14,16 +14,19 @@ import { Exo_2, Iceland, Inter } from "next/font/google";
 const iceland = Iceland({
   subsets: ["latin"],
   weight: "400",
+   display: "swap"
 });
 
 const exo2 = Exo_2({
   subsets: ["latin"],
   weight: "300",
+   display: "swap"
 });
 
 const inter = Inter({
   subsets: ["latin"],
   weight: "700",
+   display: "swap"
 });
 
 const Products = () => {
@@ -61,7 +64,7 @@ const Products = () => {
 
   return (
     <>
-      <div className="relative w-full bg-black text-white overflow-x-hidden">
+      <div className="relative w-full bg-white dark:bg-black text-black dark:text-white overflow-x-hidden">
         <div className="fixed top-[0px] h-[70px] w-dvw backdrop-blur-[5px] z-[4]">
           <MobileNavbar />
         </div>
@@ -74,13 +77,13 @@ const Products = () => {
         <div
           className={`flex flex-col items-center pt-0 pb-24 gap-2 md:gap-10 w-full ${inter.className}`}
         >
-          <div className="relative h-[600px] w-full flex items-center justify-center overflow-hidden rounded-[20px]">
+          <div className="relative h-[600px] w-full flex items-center justify-center overflow-hidden">
             <Image
               src="/assets/meeting.png"
               alt="Meeting Background"
               layout="fill"
               objectFit="cover"
-              className="opacity-40"
+              className="opacity-100 dark:opacity-40"
             />
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
               <h1 className="flex items-center justify-center gap-4 md:gap-[30px] text-[40px] md:text-[100px] font-bold text-white">
@@ -98,7 +101,7 @@ const Products = () => {
               </p>
             </div>
           </div>
-            <div className={`text-white text-[40px] md:text-[60px] ${inter.className} h-[100px] w-full flex items-center gap-[15px] md:gap-[30px] justify-center`}>
+            <div className={`text-black dark:text-white text-[40px] md:text-[60px] ${inter.className} h-[100px] w-full flex items-center gap-[15px] md:gap-[30px] justify-center`}>
                 <CircleUserRound
                   className="md:h-[70px] md:w-[70px] h-[45px] w-[45px]"
                 />
@@ -113,14 +116,14 @@ const Products = () => {
                 whileInView={{x: 0, opacity: 1}}
                 transition={{duration: 0.3}}
                 key={index}
-                className="h-[580px] hover:scale-[107%] transition-all hover:shadow-[0_0_40px_rgba(255,255,255,0.8)] duration-200 cursor-pointer w-[350px] md:w-[400px] border-2 border-white bg-white/10 rounded-[20px] flex flex-col overflow-hidden relative"
+                className="h-[580px] hover:scale-[107%] transition-all hover:shadow-[0_0_40px_rgba(0,0,0,1)] dark:hover:shadow-[0_0_40px_rgba(255,255,255,0.8)] duration-200 cursor-pointer w-[350px] md:w-[400px] border-2 border-black dark:border-white bg-zinc-800 dark:bg-white/10 rounded-[20px] flex flex-col overflow-hidden relative"
               >
                 <div className="relative h-[68%] w-full border-b-2 border-white">
                   <Image
                     src={member.image}
                     alt={member.name}
                     fill
-                    className="object-cover opacity-90 object-[center_10%]"
+                    className="object-cover hover:opacity-100 transition-all duration-200 opacity-90 object-[center_10%]"
                   />
                 </div>
 
@@ -166,7 +169,7 @@ const Products = () => {
           </div>
         </div>
 
-        <div className="relative md:top-[0px] top-[120px] h-[400px] md:h-[330px] w-full border-t-2 border-white/20 flex items-center pt-[0px] justify-start flex-col">
+        <div className="relative md:top-[0px] top-[120px] h-[400px] md:h-[330px] w-full border-t-2 border-black dark:border-white/20 flex items-center pt-[0px] justify-start flex-col">
           <Footer />
         </div>
       </div>

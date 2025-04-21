@@ -18,20 +18,16 @@ import { Exo_2, Iceland, Inter } from "next/font/google";
 const iceland = Iceland({
   subsets: ["latin"],
   weight: "400",
-   display: "swap"
 });
 
 const exo2 = Exo_2({
   subsets: ["latin"],
   weight: "300",
-   display: "swap"
-
 });
 
 const inter = Inter({
   subsets: ["latin"],
   weight: "700",
-   display: "swap"
 });
 
 export default function Home() {
@@ -391,7 +387,7 @@ export default function Home() {
           </svg>
         </div>
         <div
-          className={`absolute overflow-x-hidden top-[0px] z-[${zIndexControl}] min-h-screen w-dvw bg-white dark:bg-black flex flex-col items-center justify-start gap-[50px] pt-[80px] pb-[100px] overflow-auto`}
+          className={`absolute overflow-x-hidden top-[0px] z-[${zIndexControl}] min-h-screen w-dvw bg-gradient-to-br from-black to-black flex flex-col items-center justify-start gap-[50px] pt-[80px] pb-[100px] overflow-auto`}
         >
           <div
             className={`h-[600px] mt-[10px] opacity-[0] w-[1400px] bg-white/10 rounded-[20px] flex-shrink-0`}
@@ -447,17 +443,17 @@ export default function Home() {
               className="h-[100px] w-[350px] md:h-[150px] md:w-[600px] flex items-center justify-center gap-[9px] md:gap-[20px] transition-all"
             >
               <svg
-                className="dark:fill-white fill-black md:h-[58px] h-[40px] md:w-[58px] w-[40px]"
+                className="md:h-[58px] h-[40px] md:w-[58px] w-[40px]"
                 xmlns="http://www.w3.org/2000/svg"
                 // height="58px"
                 viewBox="0 -960 960 960"
                 // width="58px"
-                // fill="white"
+                fill="white"
               >
                 <path d="M80-120v-720h400v160h400v560H80Zm80-80h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm160 480h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm160 480h320v-400H480v80h80v80h-80v80h80v80h-80v80Zm160-240v-80h80v80h-80Zm0 160v-80h80v80h-80Z" />
               </svg>
               <h1
-                className={`md:text-6xl text-[47px] text-black dark:text-white ${inter.className}`}
+                className={`md:text-6xl text-[47px] text-white ${inter.className}`}
               >
                 Domains
               </h1>
@@ -469,23 +465,22 @@ export default function Home() {
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.3 }}
                 exit={{ x: -300, opacity: 0 }}
-                className="h-[400px] md:h-[88%] w-[96%] md:w-[25%] bg-zinc-300 dark:bg-white/10 cursor-pointer hover:scale-[106%] dark:hover:shadow-[0_0_40px_rgba(255,255,255,0.6)] hover:shadow-[0_0_40px_rgba(0,0,0,1)] transition-all duration-200 rounded-[20px] flex items-center justify-start px-[30px] py-[20px] gap-[15px] flex-col"
+                className="h-[400px] md:h-[88%] w-[96%] md:w-[25%] bg-white/10 cursor-pointer hover:scale-[106%] hover:shadow-[0_0_40px_rgba(255,255,255,0.6)] transition-all duration-200 rounded-[20px] flex items-center justify-start px-[30px] py-[20px] gap-[15px] flex-col"
               >
                 <svg
-                  className="dark:fill-white fill-black"
                   xmlns="http://www.w3.org/2000/svg"
                   height="60px"
                   viewBox="0 -960 960 960"
                   width="60px"
-                  // fill="white"
+                  fill="white"
                 >
                   <path d="M160-120v-170l527-526q12-12 27-18t30-6q16 0 30.5 6t25.5 18l56 56q12 11 18 25.5t6 30.5q0 15-6 30t-18 27L330-120H160Zm80-80h56l393-392-28-29-29-28-392 393v56Zm560-503-57-57 57 57Zm-139 82-29-28 57 57-28-29ZM560-120q74 0 137-37t63-103q0-36-19-62t-51-45l-59 59q23 10 36 22t13 26q0 23-36.5 41.5T560-200q-17 0-28.5 11.5T520-160q0 17 11.5 28.5T560-120ZM183-426l60-60q-20-8-31.5-16.5T200-520q0-12 18-24t76-37q88-38 117-69t29-70q0-55-44-87.5T280-840q-45 0-80.5 16T145-785q-11 13-9 29t15 26q13 11 29 9t27-13q14-14 31-20t42-6q41 0 60.5 12t19.5 28q0 14-17.5 25.5T262-654q-80 35-111 63.5T120-520q0 32 17 54.5t46 39.5Z" />
                 </svg>
-                <h1 className={`text-[42px] ${iceland.className} text-black dark:text-white`}>
+                <h1 className={`text-[42px] ${iceland.className} text-white`}>
                   PROTOTYPING
                 </h1>
                 <p
-                  className={`w-[90%] h-[60px] text-[16px] pt-[15px] text-center  text-black dark:text-white ${exo2.className}`}
+                  className={`w-[90%] h-[60px] text-[16px] pt-[15px] text-center text-white ${exo2.className}`}
                 >
                   Build an internal rapid prototyping lab with 3D printing, PCB
                   fabrication, and embedded system simulations. Enable quick
@@ -498,23 +493,22 @@ export default function Home() {
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.3 }}
                 exit={{ y: 100, opacity: 0 }}
-                className="md:h-[88%] h-[400px] md:w-[25%] w-[96%] bg-zinc-300 dark:bg-white/10 cursor-pointer hover:scale-[106%] dark:hover:shadow-[0_0_40px_rgba(255,255,255,0.6)] hover:shadow-[0_0_40px_rgba(0,0,0,1)] transition-all duration-200 rounded-[20px] flex items-center justify-start px-[30px] py-[20px] gap-[15px] flex-col"
+                className="md:h-[88%] h-[400px] md:w-[25%] w-[96%] bg-white/10 cursor-pointer hover:scale-[106%] hover:shadow-[0_0_40px_rgba(255,255,255,0.6)] transition-all duration-200 rounded-[20px] flex items-center justify-start px-[30px] py-[20px] gap-[15px] flex-col"
               >
                 <svg
-                  className="dark:fill-white fill-black"
                   xmlns="http://www.w3.org/2000/svg"
                   height="60px"
                   viewBox="0 -960 960 960"
                   width="60px"
-                  // fill="white"
+                  fill="white"
                 >
                   <path d="M480-600 340-740l140-140 140 140-140 140ZM40-160v-160q0-34 23.5-57t56.5-23h131q20 0 38 10t29 27q29 39 71.5 61t90.5 22q49 0 91.5-22t70.5-61q13-17 30.5-27t36.5-10h131q34 0 57 23t23 57v160H640v-91q-35 25-75.5 38T480-200q-43 0-84-13.5T320-252v92H40Zm120-280q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T280-560q0 50-34.5 85T160-440Zm640 0q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T920-560q0 50-34.5 85T800-440Z" />
                 </svg>
-                <h1 className={`text-[42px] ${iceland.className} text-black dark:text-white`}>
+                <h1 className={`text-[42px] ${iceland.className} text-white`}>
                   COLLABORATION
                 </h1>
                 <p
-                  className={`w-[90%] h-[60px] text-[16px] pt-[15px] text-center  text-black dark:text-white ${exo2.className}`}
+                  className={`w-[90%] h-[60px] text-[16px] pt-[15px] text-center text-white ${exo2.className}`}
                 >
                   Forge collaborations with research labs, universities,
                   startups, and industry leaders to drive innovation and early
@@ -527,23 +521,22 @@ export default function Home() {
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.3 }}
                 exit={{ x: 300, opacity: 0 }}
-                className="h-[400px] md:h-[88%] md:w-[25%] w-[96%] bg-zinc-300 dark:bg-white/10 cursor-pointer hover:scale-[106%] dark:hover:shadow-[0_0_40px_rgba(255,255,255,0.6)] hover:shadow-[0_0_40px_rgba(0,0,0,1)] transition-all duration-200 rounded-[20px] flex items-center justify-start px-[30px] py-[20px] gap-[15px] flex-col"
+                className="h-[400px] md:h-[88%] md:w-[25%] w-[96%] bg-white/10 cursor-pointer hover:scale-[106%] hover:shadow-[0_0_40px_rgba(255,255,255,0.6)] transition-all duration-200 rounded-[20px] flex items-center justify-start px-[30px] py-[20px] gap-[15px] flex-col"
               >
                 <svg
-                  className="dark:fill-white fill-black"
                   xmlns="http://www.w3.org/2000/svg"
                   height="60px"
                   viewBox="0 -960 960 960"
                   width="60px"
-                  // fill="white"
+                  fill="white"
                 >
                   <path d="M445-80q-29 0-56-12t-45-35L127-403l21-23q14-15 34.5-18.5T221-438l99 53v-365q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v465l-144-77 156 198q10 12 23.76 18 13.76 6 29.24 6h205q38 0 64-26t26-64v-170q0-25.5-17.25-42.75T680-460H460v-60h219.65q50.14 0 85.25 35 35.1 35 35.1 85v170q0 63-43.5 106.5T650-80H445ZM203-665q-11.07-18.75-17.04-40.49-5.96-21.74-5.96-44.76 0-70.75 49.73-120.25Q279.45-920 350-920t120.27 49.74Q520-820.52 520-749.96q0 22.96-5.96 44.62Q508.07-683.68 497-665l-52-30q7-12 11-26t4-29.48Q460-796 427.88-828q-32.12-32-78-32T272-827.92q-32 32.09-32 77.92 0 15 4 29t11 26l-52 30Zm285 335Z" />
                 </svg>
-                <h1 className={`text-[42px] ${iceland.className} text-black dark:text-white`}>
+                <h1 className={`text-[42px] ${iceland.className} text-white`}>
                   USABILITY
                 </h1>
                 <p
-                  className={`w-[90%] h-[60px] text-[16px] pt-[15px] text-center  text-black dark:text-white ${exo2.className}`}
+                  className={`w-[90%] h-[60px] text-[16px] pt-[15px] text-center text-white ${exo2.className}`}
                 >
                   Integrate UX/UI experts early in the product design process to
                   ensure intuitive experiences. Run structured beta testing with
@@ -562,17 +555,17 @@ export default function Home() {
               className="h-[100px] md:h-[150px] w-[60%] flex items-center justify-center gap-[9px] md:gap-[20px]"
             >
               <svg
-                className="dark:fill-white fill-black md:h-[70px] md:w-[70px] h-[42px] w-[42px]"
+                className="md:h-[70px] md:w-[70px] h-[42px] w-[42px]"
                 xmlns="http://www.w3.org/2000/svg"
                 // height="70px"
                 viewBox="0 -960 960 960"
                 // width="70px"
-                // fill="#e3e3e3"
+                fill="#e3e3e3"
               >
                 <path d="M480.12-330q70.88 0 120.38-49.62t49.5-120.5q0-70.88-49.62-120.38T479.88-670Q409-670 359.5-620.38T310-499.88q0 70.88 49.62 120.38t120.5 49.5Zm-.36-58q-46.76 0-79.26-32.74-32.5-32.73-32.5-79.5 0-46.76 32.74-79.26 32.73-32.5 79.5-32.5 46.76 0 79.26 32.74 32.5 32.73 32.5 79.5 0 46.76-32.74 79.26-32.73 32.5-79.5 32.5Zm.24 188q-146 0-264-83T40-500q58-134 176-217t264-83q146 0 264 83t176 217q-58 134-176 217t-264 83Zm0-300Zm-.17 240Q601-260 702.5-325.5 804-391 857-500q-53-109-154.33-174.5Q601.34-740 480.17-740T257.5-674.5Q156-609 102-500q54 109 155.33 174.5Q358.66-260 479.83-260Z" />
               </svg>
               <h1
-                className={`md:text-6xl text-[38px] text-black dark:text-white ${inter.className}`}
+                className={`md:text-6xl text-[38px]  text-white ${inter.className}`}
               >
                 Mission & Vision
               </h1>
@@ -583,7 +576,7 @@ export default function Home() {
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.3 }}
                 exit={{ x: -200, opacity: 0 }}
-                className={`h-[60px] md:h-[80px] w-[90%] rounded-[15px] bg-zinc-300 dark:bg-white/10 text-black dark:text-white text-[20px] md:text-2xl dark:hover:shadow-[0_0_20px_rgba(255,255,255,0.5)] hover:shadow-[0_0_20px_rgba(0,0,0,1)] hover:scale-[104%] transition-all duration-150 cursor-pointer ${exo2.className} flex items-center gap-4 px-6`}
+                className={`h-[60px] md:h-[80px] w-[90%] rounded-[15px] bg-white/10 text-white text-[20px] md:text-2xl hover:shadow-[0_0_20px_rgba(255,255,255,0.5)] hover:scale-[104%] transition-all duration-150 cursor-pointer ${exo2.className} flex items-center gap-4 px-6`}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -591,9 +584,9 @@ export default function Home() {
                   viewBox="0 -960 960 960"
                   width="30px"
                   fill="none"
-                  // stroke="#e3e3e3"
+                  stroke="#e3e3e3"
                   strokeWidth="40"
-                  className="dark:stroke-white stroke-black flex-shrink-0"
+                  className="flex-shrink-0"
                 >
                   <path d="M306.84-700.82 424-853q11-14 25.59-21 14.58-7 30.5-7 15.91 0 30.41 7t25.5 21l117.16 152.18L831-641q23 8 36 27.11t13 42.22q0 10.67-3.03 21.3-3.04 10.63-9.97 20.37L753-367l4 173q0 31-21 52.5T685.82-120q-1.82 0-18.82-3l-187-52-186.78 51.92Q288-121 282.49-120.5q-5.51.5-10.1.5-29.39 0-49.89-21.69Q202-163.37 203-195l4-173.25L93-531q-6.93-9.83-9.97-20.55Q80-562.28 80-573q0-23 12.92-41.61Q105.84-633.21 129-641l177.84-59.82ZM343-649l-209 70 134 194-5 207 217-60 217 61-5-208 134-192-209-72-137-178-137 178Zm137 147Z" />
                 </svg>
@@ -604,7 +597,7 @@ export default function Home() {
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.3 }}
                 exit={{ x: -200, opacity: 0 }}
-                className={`h-[60px] md:h-[80px] w-[90%] rounded-[15px] bg-zinc-300 dark:bg-white/10 text-black dark:text-white text-[20px] md:text-2xl dark:hover:shadow-[0_0_20px_rgba(255,255,255,0.5)] hover:shadow-[0_0_20px_rgba(0,0,0,1)] hover:scale-[104%] transition-all duration-150 cursor-pointer ${exo2.className} flex items-center gap-4 px-6`}
+                className={`h-[60px] md:h-[80px] w-[90%] rounded-[15px] bg-white/10 text-white text-[20px] md:text-2xl hover:shadow-[0_0_20px_rgba(255,255,255,0.5)] hover:scale-[104%] transition-all duration-150 cursor-pointer ${exo2.className} flex items-center gap-4 px-6`}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -612,9 +605,9 @@ export default function Home() {
                   viewBox="0 -960 960 960"
                   width="30px"
                   fill="none"
-                  // stroke="#e3e3e3"
+                  stroke="#e3e3e3"
                   strokeWidth="40"
-                  className="dark:stroke-white stroke-black flex-shrink-0"
+                  className="flex-shrink-0"
                 >
                   <path d="M306.84-700.82 424-853q11-14 25.59-21 14.58-7 30.5-7 15.91 0 30.41 7t25.5 21l117.16 152.18L831-641q23 8 36 27.11t13 42.22q0 10.67-3.03 21.3-3.04 10.63-9.97 20.37L753-367l4 173q0 31-21 52.5T685.82-120q-1.82 0-18.82-3l-187-52-186.78 51.92Q288-121 282.49-120.5q-5.51.5-10.1.5-29.39 0-49.89-21.69Q202-163.37 203-195l4-173.25L93-531q-6.93-9.83-9.97-20.55Q80-562.28 80-573q0-23 12.92-41.61Q105.84-633.21 129-641l177.84-59.82ZM343-649l-209 70 134 194-5 207 217-60 217 61-5-208 134-192-209-72-137-178-137 178Zm137 147Z" />
                 </svg>
@@ -625,7 +618,7 @@ export default function Home() {
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.3 }}
                 exit={{ x: -200, opacity: 0 }}
-                className={`h-[60px] md:h-[80px] w-[90%] rounded-[15px] bg-zinc-300 dark:bg-white/10 text-black dark:text-white text-[20px] md:text-2xl dark:hover:shadow-[0_0_20px_rgba(255,255,255,0.5)] hover:shadow-[0_0_20px_rgba(0,0,0,1)] hover:scale-[104%] transition-all duration-150 cursor-pointer ${exo2.className} flex items-center gap-4 px-6`}
+                className={`h-[60px] md:h-[80px] w-[90%] rounded-[15px] bg-white/10 text-white text-[20px] md:text-2xl hover:shadow-[0_0_20px_rgba(255,255,255,0.5)] hover:scale-[104%] transition-all duration-150 cursor-pointer ${exo2.className} flex items-center gap-4 px-6`}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -633,9 +626,9 @@ export default function Home() {
                   viewBox="0 -960 960 960"
                   width="30px"
                   fill="none"
-                  // stroke="#e3e3e3"
+                  stroke="#e3e3e3"
                   strokeWidth="40"
-                  className="dark:stroke-white stroke-black flex-shrink-0"
+                  className="flex-shrink-0"
                 >
                   <path d="M306.84-700.82 424-853q11-14 25.59-21 14.58-7 30.5-7 15.91 0 30.41 7t25.5 21l117.16 152.18L831-641q23 8 36 27.11t13 42.22q0 10.67-3.03 21.3-3.04 10.63-9.97 20.37L753-367l4 173q0 31-21 52.5T685.82-120q-1.82 0-18.82-3l-187-52-186.78 51.92Q288-121 282.49-120.5q-5.51.5-10.1.5-29.39 0-49.89-21.69Q202-163.37 203-195l4-173.25L93-531q-6.93-9.83-9.97-20.55Q80-562.28 80-573q0-23 12.92-41.61Q105.84-633.21 129-641l177.84-59.82ZM343-649l-209 70 134 194-5 207 217-60 217 61-5-208 134-192-209-72-137-178-137 178Zm137 147Z" />
                 </svg>
@@ -646,7 +639,7 @@ export default function Home() {
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.3 }}
                 exit={{ x: -200, opacity: 0 }}
-                className={`h-[60px] md:h-[80px] w-[90%] rounded-[15px] bg-zinc-300 dark:bg-white/10 text-black dark:text-white text-[20px] md:text-2xl dark:hover:shadow-[0_0_20px_rgba(255,255,255,0.5)] hover:shadow-[0_0_20px_rgba(0,0,0,1)] hover:scale-[104%] transition-all duration-150 cursor-pointer ${exo2.className} flex items-center gap-4 px-6`}
+                className={`h-[60px] md:h-[80px] w-[90%] rounded-[15px] bg-white/10 text-white text-[20px] md:text-2xl hover:shadow-[0_0_20px_rgba(255,255,255,0.5)] hover:scale-[104%] transition-all duration-150 cursor-pointer ${exo2.className} flex items-center gap-4 px-6`}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -654,9 +647,9 @@ export default function Home() {
                   viewBox="0 -960 960 960"
                   width="30px"
                   fill="none"
-                  // stroke="#e3e3e3"
+                  stroke="#e3e3e3"
                   strokeWidth="40"
-                  className="dark:stroke-white stroke-black flex-shrink-0"
+                  className="flex-shrink-0"
                 >
                   <path d="M306.84-700.82 424-853q11-14 25.59-21 14.58-7 30.5-7 15.91 0 30.41 7t25.5 21l117.16 152.18L831-641q23 8 36 27.11t13 42.22q0 10.67-3.03 21.3-3.04 10.63-9.97 20.37L753-367l4 173q0 31-21 52.5T685.82-120q-1.82 0-18.82-3l-187-52-186.78 51.92Q288-121 282.49-120.5q-5.51.5-10.1.5-29.39 0-49.89-21.69Q202-163.37 203-195l4-173.25L93-531q-6.93-9.83-9.97-20.55Q80-562.28 80-573q0-23 12.92-41.61Q105.84-633.21 129-641l177.84-59.82ZM343-649l-209 70 134 194-5 207 217-60 217 61-5-208 134-192-209-72-137-178-137 178Zm137 147Z" />
                 </svg>
@@ -667,7 +660,7 @@ export default function Home() {
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.3 }}
                 exit={{ x: -200, opacity: 0 }}
-                className={`md:h-[80px] h-[145px] w-[90%] rounded-[15px] bg-zinc-300 dark:bg-white/10 text-black dark:text-white text-[20px] md:text-2xl dark:hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]  hover:shadow-[0_0_20px_rgba(0,0,0,1)] hover:scale-[104%] transition-all duration-150 cursor-pointer ${exo2.className} flex items-center gap-4 px-6`}
+                className={`md:h-[80px] h-[145px] w-[90%] rounded-[15px] bg-white/10 text-white text-[20px] md:text-2xl hover:shadow-[0_0_20px_rgba(255,255,255,0.5)] hover:scale-[104%] transition-all duration-150 cursor-pointer ${exo2.className} flex items-center gap-4 px-6`}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -675,9 +668,9 @@ export default function Home() {
                   viewBox="0 -960 960 960"
                   width="30px"
                   fill="none"
-                  // stroke="#e3e3e3"
+                  stroke="#e3e3e3"
                   strokeWidth="40"
-                  className="dark:stroke-white stroke-black flex-shrink-0"
+                  className="flex-shrink-0"
                 >
                   <path d="M306.84-700.82 424-853q11-14 25.59-21 14.58-7 30.5-7 15.91 0 30.41 7t25.5 21l117.16 152.18L831-641q23 8 36 27.11t13 42.22q0 10.67-3.03 21.3-3.04 10.63-9.97 20.37L753-367l4 173q0 31-21 52.5T685.82-120q-1.82 0-18.82-3l-187-52-186.78 51.92Q288-121 282.49-120.5q-5.51.5-10.1.5-29.39 0-49.89-21.69Q202-163.37 203-195l4-173.25L93-531q-6.93-9.83-9.97-20.55Q80-562.28 80-573q0-23 12.92-41.61Q105.84-633.21 129-641l177.84-59.82ZM343-649l-209 70 134 194-5 207 217-60 217 61-5-208 134-192-209-72-137-178-137 178Zm137 147Z" />
                 </svg>
@@ -691,7 +684,7 @@ export default function Home() {
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.3 }}
                 exit={{ x: -200, opacity: 0 }}
-                className={`md:h-[80px] h-[150px] w-[90%] rounded-[15px] bg-zinc-300 dark:bg-white/10 text-black dark:text-white text-[20px] md:text-2xl dark:hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]  hover:shadow-[0_0_20px_rgba(0,0,0,1)] hover:scale-[104%] transition-all duration-150 cursor-pointer ${exo2.className} flex items-center gap-4 px-6`}
+                className={`md:h-[80px] h-[150px] w-[90%] rounded-[15px] bg-white/10 text-white text-[20px] md:text-2xl hover:shadow-[0_0_20px_rgba(255,255,255,0.5)] hover:scale-[104%] transition-all duration-150 cursor-pointer ${exo2.className} flex items-center gap-4 px-6`}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -699,9 +692,9 @@ export default function Home() {
                   viewBox="0 -960 960 960"
                   width="30px"
                   fill="none"
-                  // stroke="#e3e3e3"
+                  stroke="#e3e3e3"
                   strokeWidth="40"
-                  className="dark:stroke-white stroke-black flex-shrink-0"
+                  className="flex-shrink-0"
                 >
                   <path d="M306.84-700.82 424-853q11-14 25.59-21 14.58-7 30.5-7 15.91 0 30.41 7t25.5 21l117.16 152.18L831-641q23 8 36 27.11t13 42.22q0 10.67-3.03 21.3-3.04 10.63-9.97 20.37L753-367l4 173q0 31-21 52.5T685.82-120q-1.82 0-18.82-3l-187-52-186.78 51.92Q288-121 282.49-120.5q-5.51.5-10.1.5-29.39 0-49.89-21.69Q202-163.37 203-195l4-173.25L93-531q-6.93-9.83-9.97-20.55Q80-562.28 80-573q0-23 12.92-41.61Q105.84-633.21 129-641l177.84-59.82ZM343-649l-209 70 134 194-5 207 217-60 217 61-5-208 134-192-209-72-137-178-137 178Zm137 147Z" />
                 </svg>
@@ -721,17 +714,17 @@ export default function Home() {
               className="h-[70px] md:h-[120px] w-[600px] flex items-center justify-center gap-[13px] md:gap-[20px]"
             >
               <svg
-                className="dark:fill-white fill-black md:h-[60px] h-[45px] md:w-[60px] w-[45px]"
+                className="md:h-[60px] h-[45px] md:w-[60px] w-[45px]"
                 xmlns="http://www.w3.org/2000/svg"
                 // height="60px"
                 viewBox="0 -900 960 960"
                 // width="60px"
-                // fill="white"
+                fill="white"
               >
                 <path d="M480-394Zm-153-51 75 50 78-39 77 40 75-50-47-96H374l-47 95ZM177-140h606L659-390l-97 65-82-41-82 40-98-65-123 251ZM80-80l240-487q8-15 22.47-24 14.47-9 31.53-9h76v-280h254l-35 70 35 70H510v140h73q16.93 0 30.92 9 13.98 9 22.08 24L880-80H80Z" />
               </svg>
               <h1
-                className={`md:text-6xl text-[38px] text-black dark:text-white ${inter.className}`}
+                className={`md:text-6xl text-[38px] text-white ${inter.className}`}
               >
                 Achievements
               </h1>
@@ -744,7 +737,7 @@ export default function Home() {
                 exit={{ x: -300, opacity: 0 }}
                 className="h-[35%] md:h-full w-[350px] md:w-[35%] flex items-center justify-center flex-col"
               >
-                <div className="relative hover:shadow-[0_0_40px_rgba(0,0,0,1)] dark:hover:shadow-[0_0_40px_rgba(255,255,255,0.6)] hover:blur-[0px] cursor-pointer transition-all duration-200 hover:scale-[105%] blur-[0px] h-full w-full overflow-hidden rounded-[10px]">
+                <div className="relative hover:shadow-[0_0_40px_rgba(255,255,255,0.6)] hover:blur-[0px] cursor-pointer transition-all duration-200 hover:scale-[105%] blur-[0px] h-full w-full overflow-hidden rounded-[10px]">
                   <Image
                     src={IMC}
                     fill
@@ -766,7 +759,7 @@ export default function Home() {
                 exit={{ y: -100, opacity: 0 }}
                 className="h-[35%] md:h-full w-[350px] md:w-[35%] flex items-center justify-center flex-col"
               >
-                <div className="relative hover:shadow-[0_0_40px_rgba(0,0,0,1)] dark:hover:shadow-[0_0_40px_rgba(255,255,255,0.6)] hover:blur-[0px] cursor-pointer transition-all duration-200 hover:scale-[105%] blur-[0px] h-full w-full overflow-hidden rounded-[10px]">
+                <div className="relative hover:shadow-[0_0_40px_rgba(255,255,255,0.6)] hover:blur-[0px] cursor-pointer transition-all duration-200 hover:scale-[105%] blur-[0px] h-full w-full overflow-hidden rounded-[10px]">
                   <Image
                     src={IIT}
                     fill
@@ -788,7 +781,7 @@ export default function Home() {
                 exit={{ x: 300, opacity: 0 }}
                 className="h-[35%] md:h-full w-[350px] md:w-[35%] flex items-center justify-center flex-col"
               >
-                <div className="relative hover:shadow-[0_0_40px_rgba(0,0,0,1)] dark:hover:shadow-[0_0_40px_rgba(255,255,255,0.6)] hover:blur-[0px] cursor-pointer transition-all duration-200 hover:scale-[105%] blur-[0px] h-full w-full overflow-hidden rounded-[10px]">
+                <div className="relative hover:shadow-[0_0_40px_rgba(255,255,255,0.6)] hover:blur-[0px] cursor-pointer transition-all duration-200 hover:scale-[105%] blur-[0px] h-full w-full overflow-hidden rounded-[10px]">
                   <Image
                     src={Jamoo}
                     fill
@@ -805,7 +798,7 @@ export default function Home() {
               </motion.div>
             </div>
           </div>
-          <div className="relative md:top-[40px] top-[710px] h-[400px] md:h-[250px] w-full border-t-2 border-black dark:border-white/20 flex items-center pt-[0px] justify-start flex-col">
+          <div className="relative md:top-[40px] top-[710px] h-[400px] md:h-[250px] w-full border-t-2 border-white/20 flex items-center pt-[0px] justify-start flex-col">
             <Footer/>
           </div>
         </div>
