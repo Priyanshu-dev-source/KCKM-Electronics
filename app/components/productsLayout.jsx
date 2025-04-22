@@ -209,11 +209,11 @@ export default function ProductDisplay({ id, name, description, features, imageU
       {/* Media Section */}
       <div className="space-y-4 w-full">
         <Tabs defaultValue="photo" className="w-full" onValueChange={setActiveTab}>
-          <TabsList className="grid grid-cols-2 w-full h-[50px] bg-zinc-300 rounded-md">
-            <TabsTrigger className="text-[17px] sm:text-[19px] cursor-pointer" value="photo">
+          <TabsList className="grid grid-cols-2 w-full dark:text-black text-white h-[50px] bg-zinc-300 rounded-md">
+            <TabsTrigger className="text-[17px] sm:text-[19px] dark:text-black text-white cursor-pointer" value="photo">
               Photo
             </TabsTrigger>
-            <TabsTrigger className="text-[17px] sm:text-[19px] cursor-pointer" value="video">
+            <TabsTrigger className="text-[17px] sm:text-[19px] dark:text-black text-white cursor-pointer" value="video">
               Video
             </TabsTrigger>
           </TabsList>

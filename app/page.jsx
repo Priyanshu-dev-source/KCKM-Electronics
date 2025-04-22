@@ -12,6 +12,7 @@ import Navbar from "./components/navbar.jsx";
 import IMC from "../public/assets/imc.jpg";
 import IIT from "../public/assets/iit.jpg";
 import Jamoo from "../public/assets/jamoo.jpg";
+import { ToastContainer, toast, Bounce } from "react-toastify";
 import { Exo_2, Iceland, Inter } from "next/font/google";
 
 
@@ -107,7 +108,23 @@ export default function Home() {
   useEffect(() => {
 
     const handleWheel = (event) => {
-      // console.log(parseInt(event.deltaY));
+      console.log(parseInt(event.deltaY));
+      if(parseInt(event.deltaY) > 130){
+        toast.success(
+          "Verified Human detected !",
+          {
+            position: "top-center",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            transition: Bounce,
+          }
+        );
+      }
       handleScrollDelta(parseInt(event.deltaY));
     };
 
@@ -117,7 +134,6 @@ export default function Home() {
     return () => window.removeEventListener("wheel", handleWheel);
   }, []);
 
-  // Mobile Touch Support
   useEffect(() => {
     const handleTouchStart = (e) => {
       touchStartY.current = e.touches[0].clientY;
@@ -196,14 +212,15 @@ export default function Home() {
         <div className="fixed top-[0px] h-[70px] w-dvw backdrop-blur-[5px] z-[4]">
           <MobileNavbar/>
         </div>
+        <ToastContainer/>
         <div
           className={`fixed hidden md:flex justify-center items-center h-[50px] w-[520px] bottom-[20px] left-[500px] z-[7]`}
         >
           <Navbar />
         </div>
-        <div className={`${scrollDisplay} h-[40px] w-[150px] border-2 hover:scale-[110%] cursor-pointer transition-all duration-200 animate-bounce border-white bg-black/90 rounded-[30px] z-[11] bottom-[15px] flex items-center justify-center text-[20px] gap-[10px] text-white pb-[2px] tracking-wider font-bold`}>
+        <div className={`${scrollDisplay} h-auto w-min-content px-4 border-2 hover:scale-[110%] cursor-pointer transition-all duration-200 animate-bounce border-white bg-black/90 rounded-[30px] z-[11] bottom-[15px] flex items-center justify-center text-[20px] gap-[10px] text-white pb-[2px] tracking-wider font-bold`}>
           <Mouse/>
-          SCROLL
+          SCROLL FAST TO VERIFY HUMAN
         </div>
         <div
           className={`relative md:bottom-[0px] bottom-[50px] ${headingDisplay} h-[550px] w-[800px] z-[11] flex items-center justify-center flex-col`}
