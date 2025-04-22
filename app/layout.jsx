@@ -20,7 +20,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="transition-colors duration-500">
+      <body className="transition-colors duration-400">
         <ThemeProvider attribute="class">{children}</ThemeProvider>
       </body>
     </html>

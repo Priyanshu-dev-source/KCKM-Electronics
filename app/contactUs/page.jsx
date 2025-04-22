@@ -71,7 +71,7 @@ const Products = () => {
             "Thanks for Contacting Us...      We will get to you soon.",
             {
               position: "top-center",
-              autoClose: 3000,
+              autoClose: 2000,
               hideProgressBar: false,
               closeOnClick: false,
               pauseOnHover: true,

@@ -51,7 +51,7 @@ const MobileNavbar = () => {
         />
       </div>
 
-      <div className="relative h-[40px] w-[40px] flex items-center justify-center z-[6] top-[13px] md:top-[20px] left-[290px] md:left-[1300px]">
+      <div className="relative h-[40px] w-[40px] flex items-center justify-center z-[6] top-[13px] md:top-[20px] left-[270px] md:left-[1300px]">
       <button
         className="theme-toggle"
         type="button"

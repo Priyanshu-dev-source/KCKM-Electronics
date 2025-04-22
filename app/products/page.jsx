@@ -37,7 +37,7 @@ const Products = () => {
             className="relative top-[0px] md:top-[-25px] h-[150px] z-[3] w-full flex items-center justify-center md:gap-[10px] gap-[3px]"
           >
             <svg
-              className="md:h-[62px] md:w-[62px] h-[48px] w-[48px]"
+              className="dark:fill-white fill-black   md:h-[62px] md:w-[62px] h-[48px] w-[48px]"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 -960 960 960"
               fill="white"
